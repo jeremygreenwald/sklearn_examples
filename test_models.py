@@ -61,7 +61,6 @@ def go(make_plots=False):
             if make_plots:
                 axes = fig.add_subplot(4, 2, subplot_count)
                 subplot_count += 1
-                print(f"{subplot_count}")
                 axes = make_plot(model, X_train_scaled, y_train_scaled, X_test_scale, y_test_scale, axes)
                 axes.set_title(f"{model} with {scale},  R2 = {score}")
 
